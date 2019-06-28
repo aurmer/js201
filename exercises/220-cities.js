@@ -9,7 +9,7 @@
 // cooler than 70 degrees.
 function coolCities(cities) {
     var listOfCoolCities = [];
-    console.log(cities)
+    
     cities.forEach(element => {
         if(element.temperature < 70) listOfCoolCities.push(element)
     });
@@ -23,7 +23,7 @@ function coolCities(cities) {
 // above problem and returns an array of the cities names.
 function cityNames(cities) {
     var cityNamesArr = []
-    cities.array.forEach(element => {
+    cities.forEach(element => {
         cityNamesArr.push(element.name)
     });
 

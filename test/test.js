@@ -521,6 +521,7 @@ function checkLongLongVowels () {
     assert.deepStrictEqual(module.longLongVowels('Good'), 'Goooood')
     assert.deepStrictEqual(module.longLongVowels('Cheese'), 'Cheeeeese')
     assert.deepStrictEqual(module.longLongVowels('beef'), 'beeeeef')
+    assert.deepStrictEqual(module.longLongVowels('bookkeeper'), 'boooookkeeeeeper')
     assert.deepStrictEqual(module.longLongVowels(''), '')
     assert.deepStrictEqual(module.longLongVowels('Man'), 'Man')
     assert.deepStrictEqual(module.longLongVowels('CHOCOLATE'), 'CHOCOLATE')
