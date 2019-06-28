@@ -44,7 +44,7 @@ function cipher(unencryptedMsg,shiftNumber) {
 // 'two roads diverged in a wood'
 function decipher(encryptedMsg,shiftNumber) {
 
-  encryptedMsg = encryptedMsg.toLowerCase()  
+  encryptedMsg = encryptedMsg.toLowerCase()
   var unencryptedMsg = ""
 
   while(shiftNumber > 26) {

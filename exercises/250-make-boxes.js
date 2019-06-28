@@ -8,8 +8,17 @@
 // *****
 // *****
 
-function makeSquare() {
-    
+function makeSquare(size) {
+  var squareString = ""
+
+    for(var i = 0; i < size; i++){
+      squareString = squareString + ("*").repeat(size)
+      if(i + 1 != size) {
+        squareString = squareString + "\n"
+      }
+    }
+
+    return squareString
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -22,8 +31,22 @@ function makeSquare() {
 // *    *
 // ******
 
-function makeBox() {
+function makeBox(sizeX, sizeY) {
+  var boxString = ""
 
+    for(var i = 0; i < sizeY; i++){
+      for(var j = 0; j < sizeX; j++) {
+        if(i == 0 || j == 0 || i == sizeY-1 || j == sizeX-1) {
+          boxString = boxString + "*"
+        } else {
+          boxString = boxString + " "
+        }
+      }
+      if(i + 1 != sizeY) {
+        boxString = boxString + "\n"
+      }
+    }
+    return boxString
 }
 
 
@@ -37,6 +60,7 @@ function makeBox() {
 // * Welcome to DigitalCrafts *
 // ****************************
 
-function makeBanner() {
-
+function makeBanner(someText) {
+  var solidAsterisk = '*'.repeat(someText.length + 4)
+  return solidAsterisk + "\n* " + someText + " *\n" + solidAsterisk
 }
