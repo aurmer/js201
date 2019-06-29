@@ -21,3 +21,6 @@
 //
 // In this example we assume there is a function "hello" already defined and
 // that it prints "Hello, world!" to the console.
+function callNTimes(count, myFunc) {
+  for(;count;count--) { myFunc() }
+}

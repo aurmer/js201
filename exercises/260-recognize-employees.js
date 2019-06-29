@@ -15,3 +15,12 @@
 // > ['Great job, Susan!', 'Great job, Anthony!', 'Great job, Bill!']
 //
 // Hint: What is the best data structure for the employees of the month list?
+function recognizeEmployees(greatEmployees, outstandingEmployees) {
+  var recognitions = []
+  greatEmployees.forEach( element => {
+    if(outstandingEmployees.includes(element)) recognitions.push(`Outstanding job, ${element}!`)
+    else recognitions.push(`Great job, ${element}!`)
+  })
+
+  return recognitions
+}

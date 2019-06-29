@@ -7,7 +7,9 @@
 // Examples:
 // alphaSort(['b', 'a', 'c'])
 // > ['a', 'b', 'c']
-
+function alphaSort(stringArray) {
+  return stringArray.sort()
+}
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -17,7 +19,9 @@
 // Examples:
 // strLengthSort(['Apple', 'Banana', 'Cherry'])
 // > ['Apple', 'Cherry', 'Banana']
-
+function strLengthSort(stringArray) {
+  return stringArray.sort( (a,b) => a.length - b.length)
+}
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -38,3 +42,10 @@
 //   [4, 5]
 // ])
 // > [[2], [4, 5], [9, 1, 9]]
+function sumSort(arrayArray) {
+  return arrayArray.sort( (a, b) =>
+    a.reduce((accum, value) =>
+      accum + value) -
+    b.reduce((accum, value) =>
+      accum + value))
+}
